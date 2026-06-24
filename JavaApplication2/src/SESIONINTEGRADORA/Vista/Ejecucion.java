@@ -9,7 +9,7 @@ import SESIONINTEGRADORA.Modelo.Grupo;
 import SESIONINTEGRADORA.Modelo.Pais;
 import java.util.Scanner;
 
-public class Futbol {
+public class Ejecucion {
 
     public static void main(String[] args) {
         Scanner Lector = new Scanner(System.in);

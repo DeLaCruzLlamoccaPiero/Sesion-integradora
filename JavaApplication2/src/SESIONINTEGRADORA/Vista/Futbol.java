@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Futbol {
 
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
+        Scanner Lector = new Scanner(System.in);
         
         Almacenamiento almacen = new Almacenamiento(10); 
 
@@ -27,20 +27,20 @@ public class Futbol {
             System.out.println("2. Imprimir reporte ");
             System.out.println("3. Salir");
             System.out.print("Elige una opcion: ");
-            opcion = entrada.nextInt();
-            entrada.nextLine(); 
+            opcion = Lector.nextInt();
+            Lector.nextLine(); 
 
             switch (opcion) {
                 case 1:
                     System.out.print("Nombre del pais: ");
-                    String nombre = entrada.nextLine();
+                    String nombre = Lector.nextLine();
                     
                     System.out.print("Copas: ");
-                    int copas = entrada.nextInt();
+                    int copas = Lector.nextInt();
                     
                     System.out.print("Participaciones: ");
-                    int participaciones = entrada.nextInt();
-                    entrada.nextLine(); 
+                    int participaciones = Lector.nextInt();
+                    Lector.nextLine(); 
                     
                     paisesTemp[contadorPaises] = new Pais(nombre, copas, participaciones);
                     contadorPaises++;
@@ -68,10 +68,10 @@ public class Futbol {
                     break;
                     
                 default:
-                    System.out.println("Opción incorrecta. Intenta de nuevo.");
+                    System.out.println("Opcion incorrecta. Intenta de nuevo.");
             }
         } while (opcion != 3);
         
-        entrada.close();
+        Lector.close();
     }
 }

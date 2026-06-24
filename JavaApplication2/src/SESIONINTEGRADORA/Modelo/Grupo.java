@@ -4,12 +4,7 @@
  */
 package SESIONINTEGRADORA.Modelo;
 
-/**
- *
- * @author Administrador
- */
 public class Grupo {
-    
     private Pais pais1;
     private Pais pais2;
     private Pais pais3;
@@ -22,12 +17,8 @@ public class Grupo {
         this.pais4 = pais4;
     }
 
-    @Override
+    
     public String toString() {
-        return "\n--- GRUPO ---\n" +
-               pais1 + "\n\n" +
-               pais2 + "\n\n" +
-               pais3 + "\n\n" +
-               pais4;
+        return pais1.toString() + " " + pais2.toString() + " " + pais3.toString() + " | " + pais4.toString();
     }
 }

@@ -5,40 +5,37 @@
 package SESIONINTEGRADORA.Controlador;
 
 import SESIONINTEGRADORA.Modelo.Grupo;
-/**
- *
- * @author Administrador
- */
+
 public class Almacenamiento {
-   
     private Grupo[] listaGrupos;
     private int nroGrupos;
 
     public Almacenamiento(int nroGrupos) {
         this.nroGrupos = nroGrupos;
-        listaGrupos = new Grupo[nroGrupos];
+        this.listaGrupos = new Grupo[nroGrupos]; 
     }
 
-    public void setGrupo(int posicion, Grupo grupo) {
-        listaGrupos[posicion] = grupo;
-    }
-
-    public void imprimirReporte(Grupo[] listaGrupos) {
-
-        System.out.println(" REPORTE DE GRUPOS ");
-
-        for (int i = 0; i < listaGrupos.length; i++) {
-
-            if (listaGrupos[i] != null) {
-                System.out.println("\nGrupo " + (i + 1));
-                System.out.println(listaGrupos[i]);
-            }
-
-        }
+    public void setGrupo(int indice, Grupo grupo) {
+        this.listaGrupos[indice] = grupo;
     }
 
     public Grupo[] getListaGrupos() {
-        return listaGrupos;
+        return this.listaGrupos;
+    }
+
+    public void imprimirReporte(Grupo[] listaGrupos) {
+        boolean hayGrupos = false; 
+        
+        for (int i = 0; i < listaGrupos.length; i++) {
+            if (listaGrupos[i] != null) {
+                System.out.println(listaGrupos[i].toString());
+                hayGrupos = true; 
+            }
+        }
+        
+        
+        if (!hayGrupos) {
+            System.out.println("No hay grupos completos registrados todavia.");
+        }
     }
 }
-

@@ -4,12 +4,7 @@
  */
 package SESIONINTEGRADORA.Modelo;
 
-/**
- *
- * @author Administrador
- */
 public class Pais {
- 
     private String nombre;
     private int copasGanadas;
     private int nroParticipaciones;
@@ -22,8 +17,7 @@ public class Pais {
 
     @Override
     public String toString() {
-        return "País: " + nombre + " Copas ganadas: " + copasGanadas + " Participaciones: " + nroParticipaciones;
+        
+        return "Pais: " + nombre + " | Copas ganadas: " + copasGanadas + " | Participaciones: " + nroParticipaciones;
     }
 }
-    
-

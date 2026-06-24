@@ -22,9 +22,7 @@ public class Pais {
 
     @Override
     public String toString() {
-        return "Pais: " + nombre +
-               "\nCopas Ganadas: " + copasGanadas +
-               "\nParticipaciones: " + nroParticipaciones;
+        return "País: " + nombre + " Copas ganadas: " + copasGanadas + " Participaciones: " + nroParticipaciones;
     }
 }
     

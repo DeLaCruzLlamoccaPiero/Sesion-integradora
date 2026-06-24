@@ -25,7 +25,7 @@ public class Almacenamiento {
 
     public void imprimirReporte(Grupo[] listaGrupos) {
 
-        System.out.println("===== REPORTE DE GRUPOS =====");
+        System.out.println(" REPORTE DE GRUPOS ");
 
         for (int i = 0; i < listaGrupos.length; i++) {
 
